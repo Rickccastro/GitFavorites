@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+      font-size: 62.5%;
+    --bg-color:#000000;
+    --button-color:#065E7C;
+    --table-theader-text:#E1E1E6;
+    --table-color:#4A808C;
+    --table-header:#092D38;
+    --row-color:#082127;
+    --row-color-st:#06161B;
+}
+body *{
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-size: 1.6rem;
+    display: grid;
+    place-items: center;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11.5rem;
+    width: 120rem;
+    height: 4.8rem;
+    gap: 30rem;
+}
+
+.search{
+    display: flex;
+}
+
+#input-search {
+    border: none;
+    border-radius: 5px;
+    width: 46.2rem;
+    height: 4.8rem;
+    color: #7C7C8A;
+    background-color: var(--row-color);
+}
+#input-search::placeholder{
+    padding: 20px;
+}
+.search button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--button-color);
+    border: none;
+    width: 14rem;
+    height: 4.8rem;
+    gap: .8rem;
+}
+
+table{
+    margin-top: 9.6rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+table thead{
+    color: var(--table-theader-text);
+    height: 4.8rem;
+    background-color: var(--table-header);
+}
+
+table tbody tr{
+    height: 10rem;
+}
+table tbody tr:nth-child(odd){
+    background-color: var(--row-color-st)
+
+
+}
+table tbody tr:nth-child(even){
+
+    background-color: var(--row-color);
+}
+
+#thead-user{
+  text-align: left;
+  padding-left:4.6rem ;
+}
+
+table tbody{
+    background-color: white;
+}
+
+.user-profile{
+    display: flex;
+    margin-top: 2.8rem;
+    gap: 1.6rem;
+    color: white;
+    padding-left: 4.6rem;
+}
+.user-profile a{
+    text-decoration: none;
+    color: white;
+}
+.repositories{
+    color: white;
+    padding-left: 8rem;
+}
+.followers,.remove{
+    color: white;
+    padding-left: 12rem
+}
+
+table td img{
+   width: 50px; 
+   border-radius: 50%;
+}
+
+button {
+    background:none;
+    width: 8.5rem;
+    height: 5.6remh;
+    color: #F75A68;
+    border: none;
+    cursor: pointer;
+}
+
